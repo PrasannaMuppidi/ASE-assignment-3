@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.prasanna.ASE_lab3_camloc.Registration"
+    tools:showIn="@layout/activity_registration"
+    android:background="#23eef282"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="FirstName"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="LastName"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/lastName"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="90dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:layout_marginTop="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Mobile Number"
+        android:layout_marginTop="140dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/mobilenum"
+        android:layout_marginTop="140dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="180dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:password="false"
+        android:id="@+id/password"
+        android:layout_marginTop="180dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Location"
+        android:layout_marginTop="220dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:password="false"
+        android:id="@+id/locate"
+        android:layout_marginTop="220dp"/>
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="290dp"
+        android:onClick="setLocation"
+        android:id="@+id/location"
+        android:src="@android:drawable/ic_menu_search"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:onClick="setImage"
+        android:id="@+id/profileImage"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="210dp"
+        android:background="#2d51efb0" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:onClick="registerButton"
+        android:id="@+id/register"
+        android:layout_below="@+id/locate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SIGNIN"
+        android:onClick="signin"
+        android:id="@+id/signin"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
